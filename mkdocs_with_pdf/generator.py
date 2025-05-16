@@ -405,11 +405,8 @@ class Generator(object):
         for script in scripts:
             if script.has_attr('src'):
                 src = script['src']
-                if (not src
-                    or not re.match(r'^http?s://', src)
-                        or exists_src(src)):
-                    continue
-                self._scraped_scripts.append(script)
+                if (src and not exists_src(src)):
+                    self._scraped_scripts.append(script)   
             else:
                 text = script.get_text()
                 if text:

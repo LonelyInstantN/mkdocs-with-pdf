@@ -4,14 +4,14 @@ from setuptools import find_packages, setup
 
 setup(
     name='mkdocs-with-pdf',
-    version='0.9.3',
-    description='Generate a single PDF file from MkDocs repository',  # noqa E501
+    version='0.9.3-lin',
+    description='Generate a single PDF file from MkDocs repository - Fix for JS loading',  # noqa E501
     long_description=io.open('README.md', encoding='utf8').read(),
     long_description_content_type='text/markdown',
     keywords='mkdocs pdf weasyprint',
-    url='https://github.com/orzih/mkdocs-with-pdf',
-    author='orzih',
-    author_email='orzih@mail.com',
+    url='https://github.com/LonelyInstantN/mkdocs-with-pdf',
+    author='LonelyInstantN',
+    author_email='8821026@gmail.com',
     license='MIT',
     python_requires='>=3.6',
     install_requires=[
